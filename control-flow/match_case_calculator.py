@@ -12,9 +12,10 @@ match operator:
         result = num1 * num2
         print(f"The result is {result}.")
     case '/':
-        match num2:
-            case 0:
-                print("Cannot divide by zero")
-            case _:
-                result = num1 / num2
-                print(f"The result is {result}.")
+        if num2 != 0:
+            result = num1 / num2
+            print(f"The result is {result}.")
+        else:
+            print(f"Cannot divide by zero.")
+    case _:
+        print("Invalid operation")
