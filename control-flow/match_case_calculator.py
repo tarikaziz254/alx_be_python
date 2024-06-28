@@ -16,5 +16,5 @@ match operator:
             case 0:
                 print("Cannot divide by zero")
             case _:
-                result = num1/num2
+                result = num1 / num2
                 print(f"The result is {result}.")
