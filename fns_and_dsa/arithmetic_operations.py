@@ -18,6 +18,6 @@ def perform_operation():
         case _:
             return "invalid input"
 result = perform_operation()
-print("Result: {result}")
+print(f"Result: {result}")
 
 
