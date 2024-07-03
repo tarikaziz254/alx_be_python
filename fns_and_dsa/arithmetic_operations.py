@@ -1,15 +1,23 @@
-def perform_operation(num1: float, num2: float, operation: str):
-    if operation == 'add':
-        return num1 + num2
-    elif operation == 'subtract':
-        return num1 - num2
-    elif operation == 'multiply':
-        return num1 * num2
-    elif operation == 'divide':
-        if num2 != 0:
-            return num1 / num2
-        else:
-            return "Error: Cannot divide by zero"
-    else:
-        return "Error: Invalid operation"
+def perform_operati0n():
+    print("Arithmetic Operations")
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operator = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
+    match operator:
+        case 'add':
+            return num1 + num2
+        case 'subtract':
+            return num1 - num2
+        case 'multiply':
+            return num1 * num2
+        case 'divide':
+            if num2 != 0:
+                return num1 / numw
+            else:
+                return "cannot divide by zero"
+        case _:
+            return "invalid input"
+result = perform_operation()
+print("Result: {result}")
+
 
