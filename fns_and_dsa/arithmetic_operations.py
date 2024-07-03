@@ -1,4 +1,4 @@
-def perform_operati0n():
+def perform_operation():
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -12,7 +12,7 @@ def perform_operati0n():
             return num1 * num2
         case 'divide':
             if num2 != 0:
-                return num1 / numw
+                return num1 / num2
             else:
                 return "cannot divide by zero"
         case _:
