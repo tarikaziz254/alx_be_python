@@ -1,4 +1,4 @@
-def perform_operation(num1, num2, operator):
+def perform_operations(num1, num2, operator):
     match operator:
         case 'add':
             return num1 + num2
