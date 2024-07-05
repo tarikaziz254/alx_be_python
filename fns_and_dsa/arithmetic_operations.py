@@ -1,4 +1,4 @@
-def perform_operations(num1, num2, operator):
+def perform_operation(num1, num2, operator):
     match operator:
         case 'add':
             return num1 + num2
@@ -7,11 +7,7 @@ def perform_operations(num1, num2, operator):
         case 'multiply':
             return num1 * num2
         case 'divide':
-            if num2 != 0:
-                return num1 / num2
+            if num2 == 0:
+                return "Cannot divide by zero"
             else:
-                print("Cannot divide by zero")
-                return None
-        case _:
-            print("invalid operation")
-            return None
+                return num1 / num2
