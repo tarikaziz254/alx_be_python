@@ -19,7 +19,7 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return math.pi * self.radius**2
+        return math.pi * (self.radius**2)
     
     def __str__(self):
         f"The area of the Circle is: {self.area()}"
